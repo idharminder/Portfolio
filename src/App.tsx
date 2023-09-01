@@ -1,24 +1,20 @@
-import {HashRouter as Router, Routes, Route} from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Home from './Home';
-import BusBoard from './pages/BusBoard';
-import PhotoViewer from './pages/PhotoViewer';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom'
+import Home from './pages/Home'
+import Projects from './pages/Projects'
+import Contact from './pages/Contact'
+import Navbar from './components/Navbar'
 import './App.css'
 
 function App() {
- return (
-    <>
-
+  return (
     <Router>
-    <Navbar/>
+      <Navbar />
       <Routes>
-      <Route path="/" element={<Home />} />
-        <Route path="/busboard" element={<BusBoard />} />
-        <Route path="/photoviewer" element={<PhotoViewer />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>
-
-    </>
   )
 }
 
