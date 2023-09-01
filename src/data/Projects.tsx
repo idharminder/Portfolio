@@ -6,12 +6,12 @@ import marsMission from '../assets/mars-mission.png'
 const projects: Project[] = [
   {
     name: "Photo Viewer",
-    description: <>A React photo viewer application using images from Lorem Picsum. I learnt about React hooks such as <code>useState</code> and <code>useEffect</code>.</>,
+    description: <>A React photo viewer application using images from Lorem Picsum. I learnt about React props and hooks such as useState and useEffect.</>,
     imageUrl: photoViewer,
   },
   {
     name: "Busboard",
-    description: <>A React + TypeScript bus times application using the TfL API and the postcodes.io API. I learnt about making web requests using <code>fetch</code>.</>,
+    description: <>A React + TypeScript bus times application using the TfL API. I learnt about making web requests using fetch and about using postman to test API requests.</>,
     imageUrl: busboard,
   },
   {
